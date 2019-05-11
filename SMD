@@ -1,0 +1,33 @@
+const int blueLed = 3;
+const int greenLed = 6;
+const int redLed = 5;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(blueLed,OUTPUT);
+  pinMode(greenLed,OUTPUT);
+  pinMode(redLed,OUTPUT);
+}
+void Colors (int blueValue, int greenValue, int redValue){
+  digitalWrite(blueLed, blueValue);
+  digitalWrite(greenLed, greenValue);
+  digitalWrite(redLed, redValue);
+}
+void loop() {
+  // put your main code here, to run repeatedly:
+  delay(400);
+  Colors(1,0,0);
+  delay(400);
+  Colors(0,1,0);
+  delay(400);
+  Colors(0,0,1);
+  delay(400);
+  Colors(1,1,0);
+  delay(400);
+  Colors(0,1,1);
+  delay(400);
+  Colors(1,0,1);
+  delay(400);
+  Colors(1,1,1);
+  delay(400);
+}
